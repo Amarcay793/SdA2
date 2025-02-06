@@ -1,0 +1,31 @@
+-<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+<meta charset="UTF-8">
+<meta name="description" content="Actividad 3: Tipos de datos. Variables y constantes">
+<title> Actividad 3: Tipos de datos. Variables y constantes</title>
+
+    <script>
+        function pedirDatos(){
+        let edad;
+        let nombre;
+        
+        nombre = prompt("Dime tu nombre");
+        edad = parseInt(prompt("Dime tu edad"));
+        
+        alert ("Hola " + nombre + ", me han dicho que tienes " + edad + " años.");
+        }
+    </script>
+
+
+    </head>
+
+    <body>
+        <h1>Actividad 3: Tipos de datos. Variables y constantes</h1>
+        <p>Al pulsar el botón se le pedirá al usuario que escriba su nombre y su edad. Los datos introducidos se almacenarán en dos variables llamadas nombre y edad y se mostrará  un mensaje al usuario ddel estilo "Hola"+nombre+",veo que tienes " +edad+ "años.".</p>
+        <button onclick="pedirDatos()">Pulsame</button>
+
+
+</body>
+</html>
