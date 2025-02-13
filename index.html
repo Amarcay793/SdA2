@@ -3,25 +3,19 @@
 
     <head>
 <meta charset="UTF-8">
-<meta name="description" content="Actividad 5: Otras formas de entrada y salida de datos">
-<title> Actividad 5: Otras formas de entrada y salida de datos</title>
+<meta name="description" content="Actividad 4: Operadores aritméticos">
+<title> Actividad 4: Operadores aritméticos</title>
 <script>
-	function Calcular() {
-    	let valorintroducido;
-        valorintroducido = document.getElementById("texto").value;
-        
-        if (valorintroducido == "par") {
-       		document.getElementById("parrafo").innerHTML = "R de rojo";
-        }
-        else {
-        	if (valorintroducido == "V") {
-            	document.getElementById("parrafo").innerHTML = "V de verde";
-            }
-            else {
-            	document.getElementById("parrafo").innerHTML = "No es R ni V";
-            }   
+    function Calcular(){
+    let a;
+    let b;
+    
+    a = parseInt(prompt("Introduce el primer número"));
+    b = parseInt(prompt("Introduce el segundo número"));
+    
+    alert ("El primer número es: " + (a) + "\nEl segundo número es: " + (b) + "\nLa suma es: " + (a+b) + "\nLa resta es:" + (a-b) + "\nEl producto es: " + (a*b) + "\nLa división es: " + (a/b) + "\nEl resto es: " + (a%b) );
     }
-    }
+
     
 </script>
 
@@ -29,18 +23,12 @@
     </head>
 
     <body>
-        <h1>Actividad 5: Otras formas de entrada y salida de datos</h1>
-        <p>Esctibe un número en cada cuadro de texto y pulsa en el botón para realizar el cálculo.</p>
-        <label for="numero">Número 1:</label>
-        <input type="text" id="nombre"><br></br>
-        <label for="numero">Número 2:</label>
-        <input type="text" id="nombre"><br></br>
+        <h1>Actividad 4: Operadores aritméticos</h1>
+        <p>Al pulsar el botón se le pedirá al usuario dos números “a” y “b” y
+            mostrar un mensaje que contenga el valor del primer número (a), el valor del segundo
+            número (b), la suma (a+b), la resta (a-b), la multiplicación (a*b), la división (a/b) y el
+            resto (a%b). Cada opreación se debe mostrar en una línea distinta.</p>
         <button onclick="Calcular()">Calcular</button>
-        <p id="parrafo">El primer número es: </p>
-        <p id="parrafo">El segundo número es: </p>
-        <p id="parrafo">La suma es: </p>
-        <p id="parrafo">El primer número es: </p>
-
 
 </body>
 </html>
